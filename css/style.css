@@ -17,11 +17,12 @@ CSS Style Structure
 6. Services section
 7. Video section
 8. Portfolio section
-9. Parallax banner
-10. Get in touch section
-11. Message section
-12. Map section
-13. Scrollup section
+9. Journal section
+10. Parallax banner
+11. Get in touch section
+12. Message section
+13. Map section
+14. Scrollup section
 
 */
 
@@ -37,7 +38,7 @@ html {
 body {
 	width: 100%;
 	color: #767676;
-	-webkit-font-smoothing: anti-aliased;	
+	-webkit-font-smoothing: antialiased;
 }
 
 .top-margin {
@@ -276,4 +277,64 @@ p.description {
 	-webkit-transform: scale(1.3);
 	-moz-transform: scale(1.3);
 	-o-transform: scale(1.3);
+}
+
+/*
+3. Navigation
+*/
+
+.main-menu {
+	background: rgba(0,0,0,0.9);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.main-menu.tiny {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	top: 0px; left: 0px; right: 0px; z-index: 300;
+	box-shadow: 0 6px 21px rgba(0,0,0,0.175);
+	-webkit-box-shadow: 0 6px 21px rgba(0,0,0,0.175);
+}
+
+.main-menu.tiny .navbar-top{
+	display: none;
+}
+
+.main-menu .navbar-nav > li > a {
+	padding: 20px 13px 10px 13px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+	border-bottom: solid 3px transparent;	
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #d73e4d;
+}
+
+.main-menu .navbar-nav > li > a:hover {
+	color: #d73e4d;
+}
+
+.main-menu .navbar-nav > .active > a, .main-menu .navbar-nav > .active > a:hover, .main-menu .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #d73e4d;
+	border-bottom: solid 3px #d73e4d;	
+}
+
+.main-menu .navbar-nav > li:first-child.active > a {
+	color: #666;
+	background-color: transparent;
+	border-bottom: 3px solid transparent;
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0px;
+	border:none;	
 }
